@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail sender</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js' integrity='sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="headline">Email sender</h1>
+        <form name="sender" action="/send" method="post" class="form" id="mailsform">
+            <h2 class="form__headline">Enter emails below:</h2>
+            <div class="form__input-container" id="form__input-container">
+                <input placeholder="Enter ONE email" class="form__input" type="email" name="adressat">
+            </div>
+            <button type="button" class="form__add-btn" id="form__add-btn">Add other email</button>
+            <button id="sendBtn" class="form__submit" type="submit">Send emails</button>
+        </form>
+    </div>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/listeners.js"></script>
+</body>
+
+</html>
