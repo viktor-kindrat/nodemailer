@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 app.post("/send", function(req, res) {
     let mails = req.body.join(", ")
     let message = {
-        from: 'Test service <victorkindrat@hotmail.com>',
+        from: 'Test service <' + S_MAIL + '>',
         to: mails,
         subject: 'Test Email',
         text: 'This is a test email sent from Node.js using nodemailer',
