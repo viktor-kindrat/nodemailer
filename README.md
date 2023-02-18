@@ -27,6 +27,7 @@ npm i express
 npm i body-parser
 npm i nodemailer
 npm i dotenv
+npm i open
 ```
 
 - Then open folder with extracted repo in terminal and run it useing

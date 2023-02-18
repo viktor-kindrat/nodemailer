@@ -1,3 +1,5 @@
+const open = require("open")
+
 const nodemailer = require('nodemailer');
 require("dotenv").config();
 let { S_SERVICENAME, S_MAIL, S_PASS, S_MESSAGE, S_HTML, S_MAILTHEME, S_HOST, S_PORT } = process.env;
@@ -43,4 +45,4 @@ app.post("/send", function(req, res) {
     });
 })
 
-app.listen(PORT, () => console.log(`server running on port ${PORT}`))
+app.listen(PORT, () => open("http://localhost:3000"))
