@@ -1,14 +1,14 @@
 # nodemailer
 
 ### How to use:
-- Download this repo into your computer and check if npm and node js are installed by commands
+- Download this repo into your computer, extract it and check if npm and node js are installed by commands
 
 ```
 node -v
 npm -v
 ```
 
-- Create `.env` file in project folder and fill it like this
+- Create text file `.env` in extracted folder and fill it like this
 
 ```
 S_MAIL = "your-email-here"
@@ -35,8 +35,6 @@ npm i open
 ```
 node app
 ```
-
-- After that open `http://localhost:3000` on your web browser
 
 - Enter first needed email on input. If you need more emails to be sent, click "Add other email"
 
