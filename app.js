@@ -45,4 +45,4 @@ app.post("/send", function(req, res) {
     });
 })
 
-app.listen(PORT, () => open("http://localhost:3000"))
+app.listen(PORT, () => open("http://localhost:" + PORT))
