@@ -26,9 +26,11 @@ $("#sendBtn").click(function() {
             return response.json();
         })
         .then(data => {
+            alert(data)
             console.log(data);
         })
         .catch((error) => {
+            alert(error)
             console.error('Error:', error);
         });
 

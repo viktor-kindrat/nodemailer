@@ -13,6 +13,12 @@ npm -v
 ```
 S_MAIL = "your-email-here"
 S_PASS = "your-email-account-password-here"
+S_MESSAGE = "Message that you want to share"
+S_HTML = "HTML of this message"
+S_MAILTHEME = "Theme of the letter"
+S_SERVICENAME = "Name that will be displayed"
+S_HOST = "SMPT host name"
+S_PORT = "Port of your mail host service"
 ```
 
 - Install required modules useing command on terminal
