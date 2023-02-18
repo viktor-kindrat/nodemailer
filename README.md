@@ -1,4 +1,4 @@
-# nodemailer
+# Sender of default messages to list of users
 
 ### How to use:
 - Download this repo into your computer, extract it and check if npm and node js are installed by commands
