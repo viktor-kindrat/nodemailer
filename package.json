@@ -1,10 +1,28 @@
 {
-  "dependencies": {
-    "body-parser": "^1.20.1",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "nexmo": "^2.9.1",
-    "nodemailer": "^6.9.1",
-    "open": "^8.4.1"
-  }
+    "dependencies": {
+        "body-parser": "^1.20.1",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "nexmo": "^2.9.1",
+        "nodemailer": "^6.9.1",
+        "open": "^8.4.1"
+    },
+    "name": "nodemailer",
+    "description": "### How to use: - Download this repo into your computer, extract it and check if npm and node js are installed by commands",
+    "version": "1.0.0",
+    "main": "app.js",
+    "devDependencies": {},
+    "scripts": {
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/viktor-kindrat/nodemailer.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/viktor-kindrat/nodemailer/issues"
+    },
+    "homepage": "https://github.com/viktor-kindrat/nodemailer#readme"
 }
