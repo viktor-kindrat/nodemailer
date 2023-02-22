@@ -1,5 +1,7 @@
 # Sender of default messages to list of users
 
+[![wakatime](https://wakatime.com/badge/github/viktor-kindrat/nodemailer.svg)](https://wakatime.com/badge/github/viktor-kindrat/nodemailer)
+
 ### Test here: https://nodemailer-ghe1.onrender.com/
 
 ### How to use:
