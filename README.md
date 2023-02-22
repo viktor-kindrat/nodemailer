@@ -3,6 +3,7 @@
 [![wakatime](https://wakatime.com/badge/github/viktor-kindrat/nodemailer.svg)](https://wakatime.com/badge/github/viktor-kindrat/nodemailer)
 
 ### Test here: https://nodemailer-ghe1.onrender.com/
+P.S. Please, don't send a lot of messages one time
 
 ### How to use:
 - Download this repo into your computer, extract it and check if npm and node js are installed by commands
