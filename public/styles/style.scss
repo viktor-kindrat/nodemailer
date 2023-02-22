@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
     margin: 0;
     padding: 0;
@@ -29,62 +30,189 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    gap: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 25px;
-    background: #eeeeee;
-    .headline {
-        font-size: 45px;
-        font-weight: 400;
-        color: #333333;
-        letter-spacing: 1.5px;
-    }
-    .form {
+    .loader {
         width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #eeeeee;
         display: flex;
-        gap: 25px;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: calc(20px + 1vw);
+        color: rgb(37, 150, 206);
+        .lds-grid {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+        .lds-grid div {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: rgb(37, 150, 206);
+            animation: lds-grid 1.2s linear infinite;
+        }
+        .lds-grid div:nth-child(1) {
+            top: 8px;
+            left: 8px;
+            animation-delay: 0s;
+        }
+        .lds-grid div:nth-child(2) {
+            top: 8px;
+            left: 32px;
+            animation-delay: -0.4s;
+        }
+        .lds-grid div:nth-child(3) {
+            top: 8px;
+            left: 56px;
+            animation-delay: -0.8s;
+        }
+        .lds-grid div:nth-child(4) {
+            top: 32px;
+            left: 8px;
+            animation-delay: -0.4s;
+        }
+        .lds-grid div:nth-child(5) {
+            top: 32px;
+            left: 32px;
+            animation-delay: -0.8s;
+        }
+        .lds-grid div:nth-child(6) {
+            top: 32px;
+            left: 56px;
+            animation-delay: -1.2s;
+        }
+        .lds-grid div:nth-child(7) {
+            top: 56px;
+            left: 8px;
+            animation-delay: -0.8s;
+        }
+        .lds-grid div:nth-child(8) {
+            top: 56px;
+            left: 32px;
+            animation-delay: -1.2s;
+        }
+        .lds-grid div:nth-child(9) {
+            top: 56px;
+            left: 56px;
+            animation-delay: -1.6s;
+        }
+        @keyframes lds-grid {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    }
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        gap: 50px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .form__headline {
-            font-weight: 800;
-            font-size: 20px;
-            color: #141414;
+        padding: 25px;
+        background: #eeeeee;
+        .headline {
+            font-size: 45px;
+            font-weight: 400;
+            color: #333333;
+            letter-spacing: 1.5px;
         }
-        .form__input-container {
+        .form {
+            width: 100%;
             display: flex;
+            gap: 25px;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 15px;
-            .form__input {
-                padding: 5px 15px;
-                filter: drop-shadow(0 0 3px #00000050);
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                font-size: 16px;
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                -ms-border-radius: 5px;
-                -o-border-radius: 5px;
-                -webkit-filter: drop-shadow(0 0 3px #00000050);
-                &::placeholder {
-                    opacity: 0.3;
+            .form__headline {
+                font-weight: 800;
+                font-size: 20px;
+                color: #141414;
+            }
+            .form__input-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                .form__message,
+                .form__input {
+                    width: min(calc(100% - 50px), 350px);
+                    padding: 5px 15px;
+                    filter: drop-shadow(0 0 3px #00000050);
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    -webkit-filter: drop-shadow(0 0 3px #00000050);
+                    &::placeholder {
+                        opacity: 0.3;
+                    }
+                }
+                .form__message {
+                    min-height: 150px;
+                    resize: vertical;
+                }
+                .form__drop-zone {
+                    width: min(calc(100% - 50px), 350px);
+                    min-height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 25px;
+                    border: 5px dashed #333333;
+                    color: #333333;
+                    text-align: center;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: calc(20px + 1vw);
+                    line-height: calc(30px + 1vw);
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    .form__text-small {
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+                .form__file {
+                    display: none;
                 }
             }
-        }
-        .form__add-btn {
-            background: rgb(36, 143, 36);
-            color: #ffffff;
-            @extend %button-style
-        }
-        .form__submit {
-            background: rgb(255, 81, 18);
-            color: #ffffff;
-            @extend %button-style
+            .form__add-btn {
+                background: rgb(36, 143, 36);
+                color: #ffffff;
+                @extend %button-style
+            }
+            .form__submit {
+                background: rgb(255, 81, 18);
+                color: #ffffff;
+                @extend %button-style
+            }
         }
     }
 }

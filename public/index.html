@@ -13,18 +13,46 @@
 
 <body>
     <div class="wrap">
-        <h1 class="headline">Email sender</h1>
-        <form name="sender" action="/send" method="post" class="form" id="mailsform">
-            <h2 class="form__headline">Enter emails below:</h2>
-            <div class="form__input-container" id="form__input-container">
-                <input placeholder="Enter ONE email" class="form__input" type="email" name="adressat">
+        <div class="loader">
+            <p class="loader__text">Loading</p>
+            <div class="lds-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <button type="button" class="form__add-btn" id="form__add-btn">Add other email</button>
-            <button id="sendBtn" class="form__submit" type="submit">Send emails</button>
-        </form>
+        </div>
+        <main class="main">
+            <h1 class="headline">Email sender</h1>
+            <form name="sender" action="/send" method="post" class="form" id="mailsform">
+                <h2 class="form__headline">Enter emails below:</h2>
+                <div class="form__input-container" id="form__input-container">
+                    <input name="username" class="form__input" type="text" placeholder="Your name">
+                    <input name="theme" class="form__input" type="text" placeholder="Letter subject">
+                    <textarea name="message" class="form__message" id="form__message" placeholder="Your message"></textarea>
+                    <div class="form__drop-zone" id="form__drop-zone">
+                        Drag &amp; drop or click to select
+                    </div>
+                    <input id="form__file" class="form__file" type="file" name="adressat">
+                </div>
+                <button id="sendBtn" class="form__submit" type="submit">Send emails</button>
+            </form>
+        </main>
     </div>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/listeners.js"></script>
+    <script>
+        $(document).ready(() => {
+            setTimeout(function() {
+                $(".loader").fadeOut(300)
+            }, 300)
+        })
+    </script>
 </body>
 
 </html>

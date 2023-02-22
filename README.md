@@ -11,15 +11,12 @@ npm -v
 - Create text file `.env` in extracted folder and fill it like this
 
 ```
-S_MAIL = "your-email-here"
-S_PASS = "your-email-account-password-here"
-S_MESSAGE = "Message that you want to share"
-S_HTML = "HTML of this message"
-S_MAILTHEME = "Theme of the letter"
-S_SERVICENAME = "Name that will be displayed"
-S_HOST = "SMPT host name"
-S_PORT = "Port of your mail host service"
+S_MAIL = "Your email here"
+S_PASS = "Your password here"
+S_HOST = "SMPT hosting server adress"
+S_PORT = "Port to SMPT hosting server"
 ```
+P.S. for Gmail SMPT server is `smtp.gmail.com`, port is `587`. You can get it from your mail service provider
 
 - Install required modules useing command on terminal
 ```
@@ -36,7 +33,15 @@ npm i open
 node app
 ```
 
-- Enter first needed email on input. If you need more emails to be sent, click "Add other email"
+- Enter required data in inputs and uploud `.txt` file with needed emails to dashed zone.
+
+P.S. File should be formated like this:
+
+```
+mail@mail.com
+anothermail@mail.com
+anothermail1@mail.com
+```
 
 - Click "Send emails"
 
