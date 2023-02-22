@@ -2,10 +2,11 @@ const open = require("open")
 
 const nodemailer = require('nodemailer');
 require("dotenv").config();
-let { S_MAIL, S_PASS, S_HOST, S_PORT } = process.env;
+let { S_MAIL, S_PASS, S_HOST, S_PORT, S_SECURE } = process.env;
 let transporter = nodemailer.createTransport({
     host: S_HOST,
     port: S_PORT,
+    secure: S_SECURE,
     auth: {
         user: S_MAIL,
         pass: S_PASS
