@@ -1,29 +1,36 @@
-# Sender of default messages to list of users
+# Sender of Default Messages to List of Users
 
 [![wakatime](https://wakatime.com/badge/github/viktor-kindrat/nodemailer.svg)](https://wakatime.com/badge/github/viktor-kindrat/nodemailer)
 
-### Test here: https://nodemailer-ghe1.onrender.com/
-P.S. Please, don't send a lot of messages one time
+## Test the Project
 
-### How to use:
-- Download this repo into your computer, extract it and check if npm and node js are installed by commands
+You can test the project at: https://nodemailer-ghe1.onrender.com/. However, please do not send too many messages at once.
+
+### How to Use
+
+Follow the steps below to use the project:
+
+1. Download this repository to your computer and extract it. 
+2. Check if Node.js and npm are installed by running the following commands:
 
 ```
 node -v
 npm -v
 ```
 
-- Create text file `.env` in extracted folder and fill it like this
+3. Create a text file named `.env` in the extracted folder and fill it as shown below:
 
 ```
 S_MAIL = "Your email here"
 S_PASS = "Your password here"
-S_HOST = "SMPT hosting server adress"
-S_PORT = "Port to SMPT hosting server"
+S_HOST = "SMTP hosting server address"
+S_PORT = "Port to SMTP hosting server"
 ```
-P.S. for Gmail SMPT server is `smtp.gmail.com`, port is `587`. You can get it from your mail service provider
 
-- Install required modules useing command on terminal
+For Gmail, the SMTP server is `smtp.gmail.com`, and the port is `587`. You can get this information from your mail service provider.
+
+4. Install the required modules using the following terminal commands:
+
 ```
 npm i express
 npm i body-parser
@@ -32,15 +39,15 @@ npm i dotenv
 npm i open
 ```
 
-- Then open folder with extracted repo in terminal and run it useing
+5. Open the folder with the extracted repository in the terminal and run it using the following command:
 
 ```
 node app
 ```
 
-- Enter required data in inputs and uploud `.txt` file with needed emails to dashed zone.
+6. Enter the required data in the inputs and upload a `.txt` file with the email addresses to the designated area. 
 
-P.S. File should be formated like this:
+Note: The file should be formatted as follows:
 
 ```
 mail@mail.com
@@ -48,6 +55,5 @@ anothermail@mail.com
 anothermail1@mail.com
 ```
 
-- Click "Send emails"
-
-- Wait for response of server
+7. Click "Send emails."
+8. Wait for the server's response.
